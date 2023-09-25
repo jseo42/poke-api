@@ -7,7 +7,28 @@
     <title>Poke API</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <header>
+      <h1>Sinnoh Region Pokedex API</h1>
+    </header>
+    <div id="app">
+      <div class="display">
+        <div id="pokemon_info">
+          <div class="info_header">
+            <h1><span id="pokemon_name"></span></h1>
+            <p>id# <span id="pokemon_id"></span></p>
+          </div>
+          <div class="info_body">
+            <img src="" alt="pokemon" id="pokemon_img">
+            <p><span id="pokemon_type"></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="back_btn">Previous</button>
+        <input type="text" id="pokemon_search" placeholder="Search Sinnoh Region...">
+        <button id="next_btn">Next</button>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

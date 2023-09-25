@@ -1,4 +1,4 @@
-export default async function getSinnohData() {
+async function getSinnohData() {
   const sinnohURL = 'https://pokeapi.co/api/v2/pokedex/5/';
   try {
     const response = await fetch(sinnohURL, { mode: 'cors' });
@@ -23,10 +23,12 @@ export default async function getSinnohData() {
     });
     
     const pokemonData = await Promise.all(pokemonDataPromises);
-    console.log(pokemonData.filter(Boolean));
     return pokemonData.filter(Boolean);
   } catch (e) {
     console.error('Something went wrong', e);
     throw e;
   }
+  
 }
+
+export default getSinnohData
