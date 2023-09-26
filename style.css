@@ -1,3 +1,7 @@
+@font-face {
+  font-family: retroFont;
+  src: url(./Font/silkscreen/slkscr.ttf);
+}
 * {
   padding: 0;
   margin: 0;
@@ -6,20 +10,57 @@
 
 body {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D6B4fc;
+  font-family: retroFont;
+  
+}
+header {
+  text-align: center;
 }
 
 img {
   cursor: pointer;
+  min-width: 180px;
+  min-height: 180px;
+}
+
+button {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-family: retroFont;
 }
 #app {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -50px;
+  background-color: lightgoldenrodyellow;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
+.info_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info_body {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+
+}
 
 @media screen and (min-width: 480px) {
-  
+  body {
+    
+  }
 }

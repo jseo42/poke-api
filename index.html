@@ -9,13 +9,20 @@
 <body>
   <header>
     <h1>Sinnoh Region Pokedex API</h1>
+    <p>
+      My personal Pokedex made using the concept of Fetch API and Asynchronous Functions.
+      <br/>
+      <br/>
+      *Click on the Pokemon for the shiny variant!
+      
+    </p>
   </header>
   <div id="app">
     <div class="display">
-      <div id="pokemon_info">
+      <div class="pokemon-info" id="pokemon_info">
         <div class="info_header">
-          <h1><span id="pokemon_name"></span></h1>
-          <p>id# <span id="pokemon_id"></span></p>
+          <h2><span id="pokemon_name"></span></h2>
+          <p>id #<span id="pokemon_id"></span></p>
         </div>
         <div class="info_body">
           <img src="" alt="pokemon" id="pokemon_img">
@@ -24,9 +31,9 @@
       </div>
     </div>
     <div class="controls">
-      <button id="back_btn">Previous</button>
+      <button id="back_btn">PREV</button>
       <input type="text" id="pokemon_search" placeholder="Search Sinnoh Region...">
-      <button id="next_btn">Next</button>
+      <button id="next_btn">NEXT</button>
     </div>
   </div>
   <script type="module" src="./main.js"></script>
