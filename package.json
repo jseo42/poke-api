@@ -5,10 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build src",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": " npm run build && vite preview"
   },
   "devDependencies": {
-    "vite": "^4.4.5"
+    "vite": "^4.4.9"
+  },
+  "dependencies": {
+    "uuid": "^9.0.1"
   }
 }

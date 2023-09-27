@@ -1,6 +1,6 @@
 @font-face {
   font-family: retroFont;
-  src: url(./Font/silkscreen/slkscr.ttf);
+  src: url(.//assets/Font/silkscreen/slkscr.ttf)
 }
 * {
   padding: 0;
@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #D6B4fc;
+  background-color: #D6B4FC;
   font-family: retroFont;
   
 }
@@ -59,8 +59,3 @@ button {
 
 }
 
-@media screen and (min-width: 480px) {
-  body {
-    
-  }
-}

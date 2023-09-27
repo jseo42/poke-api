@@ -1,4 +1,4 @@
-import getSinnohData from './modules/pokedata';
+import getSinnohData from './src/scripts/pokedata';
 
 let currentPokemon = 0;
 let pokemonList = [];
