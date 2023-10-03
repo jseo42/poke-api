@@ -14,7 +14,8 @@ export default async function getSinnohData() {
           id: pokemonData.id,
           image: pokemonData.sprites['front_default'],
           imageShiny: pokemonData.sprites['front_shiny'],
-          pokemonType: pokemonData.types.map((type) => type.type.name).join(' '),
+          pokemonType: pokemonData.types.map((type) => type.type.name)
+          
         };
       } catch (e) {
         console.error('Error fetching data for', pokemon, e);
